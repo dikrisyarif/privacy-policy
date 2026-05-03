@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Privacy Policy — E-Approval Binzik</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --primary: #1A56DB;
+    --primary-dark: #1040A8;
+    --primary-light: #EBF2FF;
+    --text: #0F172A;
+    --sub: #475569;
+    --muted: #94A3B8;
+    --border: #E2E8F0;
+    --bg: #F8FAFC;
+    --white: #ffffff;
+  }
+
+  body {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.7;
+    min-height: 100vh;
+  }
+
+  /* Header */
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    padding: 60px 24px 80px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  header::before {
+    content: '';
+    position: absolute;
+    top: -60px; right: -60px;
+    width: 240px; height: 240px;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.06);
+  }
+  header::after {
+    content: '';
+    position: absolute;
+    bottom: -40px; left: -40px;
+    width: 180px; height: 180px;
+    border-radius: 50%;
+    background: rgba(124,58,237,0.2);
+  }
+  .header-icon {
+    width: 64px; height: 64px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 18px;
+    display: flex; align-items: center; justify-content: center;
+    margin: 0 auto 20px;
+    font-size: 28px;
+  }
+  header h1 {
+    font-size: clamp(24px, 5vw, 36px);
+    font-weight: 800;
+    color: #fff;
+    letter-spacing: -0.5px;
+    margin-bottom: 10px;
+  }
+  header p {
+    color: rgba(255,255,255,0.7);
+    font-size: 15px;
+  }
+
+  /* Main container */
+  main {
+    max-width: 760px;
+    margin: -32px auto 60px;
+    padding: 0 20px;
+    position: relative;
+    z-index: 1;
+  }
+
+  /* Card */
+  .card {
+    background: var(--white);
+    border-radius: 20px;
+    padding: 48px;
+    box-shadow: 0 4px 24px rgba(15,23,42,0.08);
+    border: 1px solid var(--border);
+  }
+
+  /* Last updated badge */
+  .badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--primary-light);
+    color: var(--primary);
+    font-size: 12px;
+    font-weight: 700;
+    padding: 5px 12px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+    letter-spacing: 0.3px;
+  }
+
+  /* Section */
+  .section {
+    margin-bottom: 36px;
+    padding-bottom: 36px;
+    border-bottom: 1px solid var(--border);
+  }
+  .section:last-child {
+    margin-bottom: 0;
+    padding-bottom: 0;
+    border-bottom: none;
+  }
+
+  .section-num {
+    display: inline-flex;
+    align-items: center; justify-content: center;
+    width: 28px; height: 28px;
+    background: var(--primary);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    border-radius: 8px;
+    margin-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--text);
+    margin-bottom: 12px;
+    letter-spacing: -0.2px;
+  }
+
+  p {
+    font-size: 15px;
+    color: var(--sub);
+    margin-bottom: 12px;
+    line-height: 1.75;
+  }
+  p:last-child { margin-bottom: 0; }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 12px 0 0;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  ul li {
+    font-size: 15px;
+    color: var(--sub);
+    padding-left: 20px;
+    position: relative;
+    line-height: 1.65;
+  }
+  ul li::before {
+    content: '';
+    position: absolute;
+    left: 0; top: 10px;
+    width: 6px; height: 6px;
+    border-radius: 50%;
+    background: var(--primary);
+  }
+
+  /* Contact box */
+  .contact-box {
+    background: var(--primary-light);
+    border-radius: 14px;
+    padding: 20px 24px;
+    border: 1px solid rgba(26,86,219,0.15);
+    margin-top: 12px;
+  }
+  .contact-box p {
+    margin: 0;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 14px;
+  }
+  .contact-box a {
+    color: var(--primary);
+    text-decoration: none;
+    font-weight: 700;
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 32px 20px;
+    color: var(--muted);
+    font-size: 13px;
+  }
+
+  @media (max-width: 600px) {
+    .card { padding: 28px 20px; }
+    header { padding: 48px 20px 72px; }
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-icon">📋</div>
+  <h1>Privacy Policy</h1>
+  <p>E-Approval Binzik — Digital Memo Approval</p>
+</header>
+
+<main>
+  <div class="card">
+    <div class="badge">📅 Last updated: May 2026</div>
+
+    <div class="section">
+      <div class="section-num">1</div>
+      <h2>Introduction</h2>
+      <p>Welcome to E-Approval Binzik ("the App"). This Privacy Policy explains how we collect, use, and protect your information when you use our mobile application. By using the App, you agree to the terms described in this policy.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">2</div>
+      <h2>Information We Collect</h2>
+      <p>We collect the following types of information to provide and improve our services:</p>
+      <ul>
+        <li><strong>Account information</strong> — username and employee data used for login and identity within the organization.</li>
+        <li><strong>Memo data</strong> — content, attachments, approver lists, and recipients associated with memos you create or process.</li>
+        <li><strong>File attachments</strong> — documents (PDF, Word, Excel, CSV) and images you upload as memo attachments, stored locally on your device.</li>
+        <li><strong>Approval activity</strong> — records of approvals, rejections, and notes you submit within the approval workflow.</li>
+        <li><strong>Device information</strong> — basic device data for app compatibility and error reporting.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">3</div>
+      <h2>How We Use Your Information</h2>
+      <p>The information collected is used solely to operate and improve the App's core functionality:</p>
+      <ul>
+        <li>To authenticate users and maintain secure sessions.</li>
+        <li>To process, route, and track memo approvals within your organization.</li>
+        <li>To store and display file attachments associated with memos.</li>
+        <li>To send in-app notifications about pending approvals and memo status changes.</li>
+        <li>To improve app performance and fix technical issues.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">4</div>
+      <h2>Data Storage</h2>
+      <p>All memo data and file attachments are stored locally on your device. The App does not currently transmit your personal data or attachments to external servers. Future versions may include cloud sync functionality, which will be disclosed in an updated Privacy Policy prior to release.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">5</div>
+      <h2>Data Sharing</h2>
+      <p>We do not sell, trade, or share your personal information with third parties. Memo content may be visible to other users within your organization as part of the normal approval workflow (e.g., approvers can see memo content submitted to them).</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">6</div>
+      <h2>Data Security</h2>
+      <p>We take reasonable measures to protect your information from unauthorized access, loss, or misuse. File attachments are stored in the app's sandboxed local storage, accessible only by the App. We recommend keeping your device secure with a PIN or biometric lock.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">7</div>
+      <h2>Your Rights</h2>
+      <p>You have the right to:</p>
+      <ul>
+        <li>Access and review the data associated with your account.</li>
+        <li>Delete locally stored attachments at any time through the App.</li>
+        <li>Request deletion of your account data by contacting us.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <div class="section-num">8</div>
+      <h2>Children's Privacy</h2>
+      <p>E-Approval Binzik is intended for use by employees within an organization. It is not directed at children under the age of 13. We do not knowingly collect personal information from children.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">9</div>
+      <h2>Changes to This Policy</h2>
+      <p>We may update this Privacy Policy from time to time. Any significant changes will be communicated via an in-app notification. Continued use of the App after changes are posted constitutes your acceptance of the updated policy.</p>
+    </div>
+
+    <div class="section">
+      <div class="section-num">10</div>
+      <h2>Contact Us</h2>
+      <p>If you have questions or concerns about this Privacy Policy, please contact us:</p>
+      <div class="contact-box">
+        <p>📧 Email: <a href="mailto:dikrisyarifh@gmail.com">dikrisyarifh@gmail.com</a></p>
+      </div>
+    </div>
+
+  </div>
+</main>
+
+<footer>
+  &copy; 2026 E-Approval Binzik. All rights reserved.
+</footer>
+
+</body>
+</html>
